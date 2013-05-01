@@ -35,7 +35,8 @@ Simple Example Usage:
 
 
 Here are the steps to build for linux:
-./configure
-make all
-cd src/python
-python setup.py build_ext --inplace -t .
+
+     	./configure
+	make all
+	cd src/python
+	python setup.py build_ext --inplace -t .
