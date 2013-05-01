@@ -10,7 +10,7 @@ Any code by me is released under the [Do What The Fuck You Want To Public Licens
 
 ## TODO:
 
-* Write a setup.py script.
+~~* Write a setup.py script.~~
 * Eliminate the current Cython wrapper in place of actual C code.
 * Trim away some of the unnecessary code from optipng for dealing with folders, etc. (Things easily dealt with from the calling script)
 * Modify the internals to provide less of a monotholic, singleton engine, thus allow multiple engines to be created and run in parallel.
@@ -32,3 +32,10 @@ Simple Example Usage:
 	optipng.engine += 'data\\test5.png'
 	optipng.engine += 'data\\test6.png'
 	optipng.engine.execute()
+
+
+Here are the steps to build for linux:
+./configure
+make all
+cd src/python
+python setup.py build_ext --inplace -t .
