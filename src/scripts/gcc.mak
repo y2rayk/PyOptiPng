@@ -12,7 +12,7 @@ man1dir=$(mandir)/man1
 
 CC = gcc
 LD = $(CC)
-CFLAGS  = -O2 -W -Wall
+CFLAGS  = -O2 -W -Wall -fPIC
 LDFLAGS = -s
 
 OPTIPNG = optipng$(EXE)
